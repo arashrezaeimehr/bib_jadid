@@ -1,6 +1,15 @@
 <!DOCTYPE html> 
 <html>
 <head>
+ <script src="cordova.js"></script>
+    <script>
+    Document.addEventListener("deviceready", function(e) {
+        window.setTimeout(function(){
+        navigator.splashscreen.hide();
+    },5000);
+        }, "false");
+    </script>
+    
 <script language="JavaScript" >
 window.location.href="http://parstudio.net/bible/index.html"
 </script>
