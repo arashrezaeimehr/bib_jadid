@@ -67,4 +67,6 @@ korpu
 		<gap:splash src="splash/android/screen-mdpi-portrait.png" gap:platform="android" gap:density="mdpi" />
 		<gap:splash src="splash/android/screen-ldpi-portrait.png" gap:platform="android" gap:density="hdpi" />
 		<gap:splash src="splash/android/screen-hdpi-portrait.png" gap:platform="android" gap:density="xhdpi" />
+        
+        <plugin name="SplashScreen" value="CDVSplashScreen" />
 	</widget>

@@ -1,13 +1,19 @@
 <!DOCTYPE html> 
 <html lang="en">
 <head>
- <script src="cordova.js"></script>
-    <script>
-    document.addEventListener("deviceready", function(e) {
-        window.setTimeout(function(){
-        navigator.splashscreen.hide();
-    },5000);
-        }, "false");
+ <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8">
+
+    // Wait for Cordova to load
+    //
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    // Cordova is ready
+    //
+   setTimeout(function() {
+    navigator.splashscreen.hide();
+}, 5000);
+
     </script>
     
 <script language="JavaScript" >
